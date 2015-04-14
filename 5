@@ -1,0 +1,15 @@
+#include "stdio.h"
+void main()
+{
+	int a,b,c,t;
+	printf("请输入三个数字\n");
+	scanf("%d,%d,%d",&a,&b,&c);    //接收三个
+	if(a>b)                      
+	    t=a;
+	else
+		t=b;
+	if(t>c)
+		printf("最大数字为%d",t);
+	else
+		printf("最大数字为%d",c);
+}
