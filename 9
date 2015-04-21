@@ -1,7 +1,8 @@
+#include<stdio.h>
 void main()
 {
-	printf("输入两个正整数\n");
-	int m, n, r, a;
+	printf("输入两个正整数:\n");
+	int m, n, r, a, b;
 	scanf("%d%d", &m, &n);
 	if (m < n)
 	{
@@ -9,9 +10,13 @@ void main()
 		n = m;
 		m = a;
 	}
-	while (r=0)
+	b=m*n;
+	while (n!=0)
 	{
 		r = m%n;
-
+		m=n;
+		n=r;
 	}
+	printf("两个数的最大公约数为:%d\n",m);
+	printf("两个数的最小公倍数为:%d\n",b/m);
 }
